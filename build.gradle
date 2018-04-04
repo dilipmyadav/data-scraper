@@ -10,5 +10,18 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.11.2'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.2.1'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.5'
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.8.9'
 }
+
+task run (type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+
+    main = 'scrape.web.page.Scraper'
+
+    args 'src/main/resources/config/product.properties'
+}
+
