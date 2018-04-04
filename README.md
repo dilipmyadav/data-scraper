@@ -1,6 +1,6 @@
 data-scraper
 
-Is a gradle project which scrapes data from html based on properties configured in a properties file
+Is a gradle project(installation of latest version of Gradle is recommended) which scrapes data from html based on properties configured in a properties file
 Example: the product.properties file for product data.
 
 Jsoup library has been chosen for this project as it seems to be a good library for the requirement of this

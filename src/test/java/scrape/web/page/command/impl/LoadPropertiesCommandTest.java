@@ -2,11 +2,14 @@ package scrape.web.page.command.impl;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.junit.MockitoJUnitRunner;
 import scrape.web.page.command.ScrapeContext;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+@RunWith(MockitoJUnitRunner.class)
 public class LoadPropertiesCommandTest {
 
     private static final String ACTUAL_URL = "www.test.com";
